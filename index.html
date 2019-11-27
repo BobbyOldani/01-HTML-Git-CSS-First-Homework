@@ -5,8 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>About Me</title>
-    <!--When I link the style sheet do I need to add type="text/css" maybe images? What if I dont?-->
-    <link rel="stylesheet" href="assets/css/styles.css">
+    <!--CSS Reset Link on top because it has the lowest priority-->
+    <link rel="stylesheet" type="text/css" href="https://meyerweb.com/eric/tools/css/reset/reset.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
 
 </head>
 <!--Figure out BG image (example not working) body { background-image: url(../assets/images/triangle-mosaic.png) -->
@@ -15,18 +16,19 @@
         <h1>Bobby Oldani</h1>
     </div>
 
+    <!--Add style to nav or each a tag to style the links???-->
     <nav>
         <a href= "index.html">About</a>
         <a href= "portfolio.html">Portfolio</a>
         <a href= "contact.html">Contact</a>
     </nav>
-    
+
    <div class= "main">
-       <section id="aboutme">
+        <!--section id= "aboutme" (May want to make this about me text a section not sure?-->
             <h1>About Me</h1>
 
             <hr>
-
+                    <!--Add class with image tag to style... GOOGLE -->
             <img src= "assets/images/profilepic.jpg" alt= "Profile Pic">
 
 
@@ -38,7 +40,7 @@
             <p>One senario may find me standing 5000ft above sea level, snow falling silently through the
                 the crisp air of Stevens Pass. At this point the only thing I would hear would be my breath and the
                 sound of my own thoughts. I would take one last deep breath before pointing my snowboard
-                downhill. At this point, everything would go quiet. This is the feeling that I strive for, a
+                downhill. At this point, everything goes quiet. This is the feeling that I strive for, a
                 nearly undescribable feeling. A feeling only acheivable by complete focus.</p>
 
             <p>Another senario may find me at a bar with friends and family. Eating my favorite comfort food
@@ -47,8 +49,12 @@
 
             <p>On the other hand, maybe I'm right where I should be...</p>
 
-       </section>
+       <!--Might want to close section tag here not sure if I will need it or not-->
    </div>
+
+    <div class= "footer">
+        <p>Copyright &trade;</p>
+    </div>
     
 </body>
 </html>
