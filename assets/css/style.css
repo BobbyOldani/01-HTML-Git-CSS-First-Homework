@@ -1,11 +1,115 @@
 * { box-sizing: border-box;
 }
 
+.main .name {
+    position: absolute;
+    top: -131px;
+    left: -1px;                            /* left 1px to align with the 1px border*/    
+    color: #ffffff; 
+    margin: auto;
+    background-color: #4aaaa5;
+    width: 265px;
+    height: 90px;
+    line-height: 60px;
+    text-align: center;
+    font-size: 24pt;
+    font-weight: bold;
+    
+}
+
+.main .name h1 {
+    color: #ffffff;
+    line-height: 60px;
+}
+
+
 body {
-     background-image: url(../images/triangle-mosaic.png)
+     background-image: url(../images/triangle-mosaic.png);
+     color: #777777;
+     position: relative;
+
+}
+
+
+.main {
+    width: 960px;
+    height: 525px;
+    padding: 5px;
+    border-style: groove;
+    border-width: 1px;
+    margin: auto;
+    margin-top: 40px;
+    background-color: #ffffff;
+    border-color: #dddddd;
+    position: relative;
 
 }
 
 .main h1 {
     color: #4aaaa5;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: bold;
+    font-size: 24pt;
+    margin: 10px;
+    padding: 10px;
+}
+
+.profilepic {
+    position: absolute;
+    padding: 1px;
+    margin: 15px;
+    width: 175px;
+    height: 175px;
+    float: left;
+}
+
+#aboutmefloated {
+    width: 700px;
+    float: right;
+    padding: 10px;
+    margin: 10px;
+    margin-bottom: -10px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+
+}
+
+#aboutmenofloat {
+    width: 960px;
+    float: left;
+    padding: 5px;
+    margin-left: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+.header {
+    height: 120px;
+    padding: 5px;
+    border-style: groove;
+    border-width: 1px;
+    background-color: #ffffff;
+    border-color: #cccccc;
+    margin: auto;
+    
+}
+
+.footer {
+    background-color: #666666;
+    padding: 1px;
+    height: 120px;
+    line-height: 120px;
+    text-align: center;
+    border-top: 8px solid #4aaaa5;
+    margin-top: 200px;
+
+}
+
+nav {
+    position: absolute;
+    right: -1px;                          /*To align with 1px border again*/
+    top: -60px;
+    
 }
