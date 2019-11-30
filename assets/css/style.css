@@ -1,3 +1,6 @@
+/*Ask how I can make the main content section scale in height to the ammount of content I am putting in it
+without ruining my current styling. Maybe I just designed this wrong...*/
+
 * { box-sizing: border-box;
 }
 
@@ -27,13 +30,14 @@ body {
      background-image: url(../images/triangle-mosaic.png);
      color: #777777;
      position: relative;
-
+     height: 100%;
+     margin: 0;
 }
 
 
 .main {
     width: 960px;
-    height: 525px;
+    height:835px;
     padding: 25px;
     border-style: solid;
     border-width: 1px;
@@ -42,7 +46,6 @@ body {
     background-color: #ffffff;
     border-color: #dddddd;
     position: relative;
-    margin-bottom: 120px;
 
 }
 
@@ -51,6 +54,7 @@ body {
     font-family: Georgia, 'Times New Roman', Times, serif;
     font-weight: bold;
     font-size: 24pt;
+    margin: 10px;
 }
 
 .profilepic {
@@ -104,6 +108,7 @@ body {
     border-top: 8px solid #4aaaa5;
     color: #dddddd;
     font-size: 10pt;
+    margin-top: 90px;
     
 }
 
@@ -133,3 +138,142 @@ a:link {
 .navbar .contactnav {
     padding: 5px;
 }
+
+.boxone {
+    position: relative;
+    width: 225px;
+    height: 225px;
+    margin: 10px;
+}
+
+.asgard{
+    position: absolute;
+    left: 35px;
+    top: 265px;
+    width: 225px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    background-color: #4aaaa5;
+    color: #ffffff;
+}
+
+.boxtwo {
+    position: relative;
+    width: 225px;
+    height: 225px;
+    transform: rotate(90deg);
+    margin: 10px;
+
+}
+
+.guye {
+    position: absolute;
+    top: 265px;
+    left: 284px;
+    background-color: #4aaaa5;
+    color: #ffffff;
+    width: 225px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+}
+
+.boxthree {
+    position: relative;
+    width: 225px;
+    height: 225px;
+    transform: rotate(90deg);
+    margin: 10px;
+    right: 498px;
+    top: 249px;
+}
+
+.hood {
+    position: absolute;
+    left: 35px;
+    top: 515px;
+    background-color: #4aaaa5;
+    color: #ffffff;
+    width: 225px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+}
+
+.boxfour {
+    position: relative;
+    width: 225px;
+    height: 225px;
+    margin: 10px;
+    left: 249px;
+}
+
+.baker {
+    position: absolute;
+    left: 284px;
+    top: 515px;
+    background-color: #4aaaa5;
+    color: #ffffff;
+    width: 225px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+}
+
+.boxfive {
+    position: relative;
+    width: 225px;
+    height: 225px;
+    margin: 10px;
+    top: 249px;
+    right: 249px;
+}
+
+.ranier {
+    position: absolute;
+    left: 35px;
+    bottom: 30px;
+    background-color: #4aaaa5;
+    color: #ffffff;
+    width: 225px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+}
+
+form {
+    font-family: Arial, Helvetica, sans-serif;
+}
+input {
+    width: 100%;
+    border-color: #dddddd;
+    border-style: solid;
+    margin: 10px;
+    padding: 10px;
+}
+
+
+textarea {
+    width: 100%;
+    height: 200px;
+    border-color: #dddddd;
+    border-style: solid;
+    margin: 10px;
+    padding: 10px;
+
+}
+
+.submit {
+    background-color: #4aaaa5;
+    color: #ffffff;
+    font-size: 16pt;
+    margin: 10px;
+    padding: 10px;
+    
+}
+
+.message {
+    margin:10px;
+}
+
