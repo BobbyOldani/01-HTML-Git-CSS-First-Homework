@@ -5,14 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Portfolio</title>
+     <!--CSS Reset Link on top because it has the lowest priority-->
     <link rel="stylesheet" type="text/css" href="https://meyerweb.com/eric/tools/css/reset/reset.css">
     <link rel="stylesheet" type="text/css" href="assets/css/style.css">
-
 </head>
 
 <body>
     <div class= "header">
-        <div class="boundary">
+        <div class="boundary"> <!--This was created to keep the name and nav bars in line with the main container-->
             <div class= "name">
                 <h1>Bobby Oldani</h1>
             </div>
@@ -23,43 +23,46 @@
             </nav>  
        </div>     
     </div>
-
+<!--This strategy for creating rows within a div was suggested to me by a friend and mentor Matt Emma. My
+original strategy was similar but without the extra div for boxrows. Originally it left my boxes in a 3 column
+2 row set and the only way I could figure out how to fix this was to absolutely position every div
+in relation to the container. This visually gave me what I wanted but was a complete mess!!!!!-->
     <div class= "main">   
         <h1>Portfolio</h1>
         <div class= "boxrow">
             <div class= "box asgardImg">
                 <div class= "title">
-                    Asgard Pass
+                    <a href= "#">Asgard Pass</a>
                 </div>
             </div>
             <div class= "box guyeImg" >
                 <div class= "title">
-                    Guye Peak
+                   <a href= "#">Guye Peak</a> 
                 </div>
             </div>
         </div>
         <div class= "boxrow">
             <div class= "box stevenspassImg">
                 <div class= "title">
-                    Stevens Pass
-                </div>
+                    <a href= "#">Stevens Pass</a>  
+                </div>   
             </div>
             <div class= "box bakerImg">
                 <div class= "title">
-                    Mt. Baker
+                    <a href= "#">Mt. Baker</a>
                 </div>
             </div>
         </div>
         <div class= "boxrow">
             <div class= "box ranierImg">
                 <div class= "title">
-                    Mt. Ranier
+                <a href= "#">Mt. Ranier</a>
                 </div>
             </div>
         </div>     
     </div>
 
-    <div class= "push">
+    <div class= "push"><!--This div was used for the sticky footer.-->
     </div>
 
     <footer class= "footer">

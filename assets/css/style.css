@@ -4,9 +4,6 @@ without ruining my current styling. Maybe I just designed this wrong...*/
 * { box-sizing: border-box;
 }
 /*Set HTML height to 100% because then I adjust height % within other elements*/
-html {
-    height: 100%;
-}
 
 body {
     background-image: url(../images/triangle-mosaic.png);
@@ -18,14 +15,10 @@ body {
 
 .header {
     height: 90px;
-    /*padding: 5px;*/
-    border-style: solid;
-    border-width: 1px;
+    border-bottom: 2px solid #cccccc;
     background-color: #ffffff;
-    border-color: #cccccc;
     margin: auto;
     width: 100%;
-    min-width: 500px;
     text-align: center;
     
 }
@@ -72,16 +65,28 @@ a:visited {
     color: #777777;
     text-decoration: none;
 }
-/*This helps create the vertical line inbetween links by making a right border.*/
+
+.title a:visited {
+    color: #ffffff;
+    text-decoration: none;
+
+}
+/*The padding here increases the clickable area of the a link to largest possible without affecting the text layout*/
+.title a:link {
+    color: #ffffff;
+    text-decoration: none;
+    padding: 10px 65px 10px 65px;
+}
+/*This creates the vertical line inbetween links by making a right border.*/
 .navbar .indexnav {
-    border-right: 1px solid #777777;
+    border-right: 1px solid #dddddd;
     padding: 5px;
     padding-right: 10px;
 
 }
 
 .navbar .portfolionav {
-    border-right: 1px solid #777777;
+    border-right: 1px solid #dddddd;
     padding: 5px;
     padding-right: 10px;
 }
@@ -89,7 +94,7 @@ a:visited {
 .navbar .contactnav {
     padding: 5px;
 }
-/*This creates the footer the push keeps it seperated from the main div and helps with sticky footer.
+/*This creates the footer and the push keeps it seperated from the main div and helps with sticky footer.
 Line was adjusted to keep the copyright symbol at the bottom of the footer.*/
 .footer {
     background-color: #666666;
@@ -118,7 +123,7 @@ Line was adjusted to keep the copyright symbol at the bottom of the footer.*/
     background-color: #ffffff;
     border-color: #dddddd;
     position: relative;
-    overflow: auto;
+    overflow: auto; /*This keep the footer from flying up to the middle of my index page and keeps my picture and text in the main div */
     margin-bottom: 90px;
 
 }
@@ -130,11 +135,11 @@ Line was adjusted to keep the copyright symbol at the bottom of the footer.*/
     font-size: 24pt;
     margin: 10px;
     padding-bottom: 10px;
-    border-bottom: 1px solid #dddddd;
+    border-bottom: 3px solid #dddddd;
 }
 
 .box {
-    display: inline-block;
+    display: inline-block; /*As far as I understand this is what gives me structure within the div. all my boxes fly all over if I remove this.*/
     margin: 15px;
     width: 250px;
     height: 250px;
@@ -147,7 +152,7 @@ Line was adjusted to keep the copyright symbol at the bottom of the footer.*/
     text-align: center;
     position: relative;
     margin-top: 80%;
-    padding: 5px;
+    padding: 12px;
     font-size: 14pt;
 }
 
@@ -207,7 +212,7 @@ textarea {
     padding: 10px;
     border-style: none;
     width: 120px;
-    
+    cursor: pointer
 }
 
 .message {
@@ -217,7 +222,7 @@ textarea {
 .profilepic {
     position: absolute;
     padding: 1px;
-    margin: 15px;
+    margin: 25px 15px 15px 15px;
     width: 175px;
     height: 175px;
     float: left;
